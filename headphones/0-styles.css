@@ -56,7 +56,7 @@ body {
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background-image: url("https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/75a582f98640445a2dbf.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20250620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250620T133938Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=66406c192400a28db197b031a81a543bdd2309ac05e7d720ab966c635b98fe8b");
+  background-image: url("https://images.unsplash.com/photo-1585386959984-a4155224d743?auto=format&fit=crop&w=1950&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
