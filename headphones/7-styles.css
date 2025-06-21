@@ -1,0 +1,183 @@
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  background-color: #000;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+.header {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-height: 50px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #FF6565;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #000000aa, #000000aa), url('https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/4a93441c93989ad7ea72.gif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+/* Button */
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #FF6565;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* What we do */
+.what-we-do {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.service {
+  max-width: 250px;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 10px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.service:hover {
+  transform: scale(1.05) rotate(2deg);
+  opacity: 0.95;
+}
+
+.icon {
+  font-family: 'holberton_school-icon';
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+  color: #FF6565;
+}
+
+/* Our Results */
+.results {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.pentagons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.pentagon {
+  width: 80px;
+  height: 80px;
+  background: #FF6565;
+  clip-path: polygon(50% 0%, 95% 35%, 77% 100%, 23% 100%, 5% 35%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.pentagon:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 0 15px rgba(255, 101, 101, 0.7);
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-icons a {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.footer-icons a:hover {
+  color: #FF6565;
+}
+
+.footer-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pentagons {
+    flex-direction: column;
+  }
+}
