@@ -1,32 +1,22 @@
-/* Reset */
+/* Reset some defaults */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variables */
-:root {
-  --main-color: #ff6565;
-  --text-color: #fff;
-  --bg-color: #1d1d1d;
-  --font-family: 'Source Sans Pro', sans-serif;
-  --max-width: 1000px;
-}
-
-/* Body */
+/* Base styles */
 body {
-  font-family: var(--font-family);
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.6;
+  color: #fff;
 }
 
 /* Container */
 .container {
-  max-width: var(--max-width);
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 /* Header */
@@ -42,11 +32,9 @@ body {
 }
 
 .logo {
-  height: 40px;
-  max-width: 150px;
+  max-height: 50px;
 }
 
-/* Navigation */
 .nav ul {
   list-style: none;
   display: flex;
@@ -54,45 +42,37 @@ body {
 }
 
 .nav a {
+  color: #fff;
   text-decoration: none;
-  color: var(--text-color);
-  transition: color 0.3s;
+  font-weight: bold;
 }
 
 .nav a:hover,
 .nav a:active {
-  color: var(--main-color);
+  color: #FF6565;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
   padding: 80px 20px;
-  background-image: url("https://chatgpt-image-hosting.s3.amazonaws.com/headphones/hero-image.png");
+  background-image: url("https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/3/75a582f98640445a2dbf.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20250620%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250620T133938Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=66406c192400a28db197b031a81a543bdd2309ac05e7d720ab966c635b98fe8b");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-}
-
+/* Button */
 .btn {
-  background-color: var(--main-color);
-  color: white;
-  padding: 15px 30px;
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #FF6565;
+  color: #fff;
   font-weight: bold;
+  text-decoration: none;
   border-radius: 5px;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .btn:hover,
@@ -102,17 +82,17 @@ body {
 
 /* Responsive */
 @media (max-width: 480px) {
+  .header-content {
+    flex-direction: column;
+  }
+
   .nav ul {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
   }
 
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
+  .hero {
+    padding: 60px 15px;
   }
 }
